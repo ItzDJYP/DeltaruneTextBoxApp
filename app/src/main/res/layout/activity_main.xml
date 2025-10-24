@@ -70,6 +70,7 @@
             android:layout_marginStart="16dp"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
+            android:fontFamily="@font/deltarune_font"
             tools:text="This is where the text will appear, just like in the game!" />
 
     </RelativeLayout>
