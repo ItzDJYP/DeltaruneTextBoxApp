@@ -1,31 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp"
-    android:background="#000000"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Character Selection Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/spamtonButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Spamton" />
+
+        <Button
+            android:id="@+id/tennaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tenna" />
+    </LinearLayout>
 
     <EditText
         android:id="@+id/inputText"
-        android:layout_width="428dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        android:hint="Enter your text..."
-        android:textColor="#FFFFFF" />
+        android:layout_marginTop="16dp"
+        android:hint="Enter text here..."
+        android:inputType="text" />
 
     <Button
         android:id="@+id/playButton"
-        android:text="Play"
-        android:layout_marginTop="12dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Speak" />
 
-    <TextView
-        android:id="@+id/outputText"
-        android:textColor="#00FFFF"
-        android:textSize="18sp"
-        android:layout_marginTop="20dp"
+    <!-- Deltarune Text Box Area -->
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="180dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/textbox_background"
+        android:padding="20dp">
+
+        <!-- Character Portrait -->
+        <ImageView
+            android:id="@+id/portraitImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/spamton_portrait"
+            tools:ignore="ContentDescription" />
+
+        <!-- Animated Text Output -->
+        <TextView
+            android:id="@+id/outputText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/portraitImage"
+            android:layout_marginStart="16dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:text="This is where the text will appear, just like in the game!" />
+
+    </RelativeLayout>
+
 </LinearLayout>

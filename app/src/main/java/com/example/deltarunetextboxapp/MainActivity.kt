@@ -1,17 +1,26 @@
-package com.example.deltarunetextbox
+package com.example.deltarunetextboxapp
 
 import android.media.MediaPlayer
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.*
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var mediaPlayer: MediaPlayer
+    private lateinit var spamtonPlayer: MediaPlayer
+    private lateinit var tennaPlayer: MediaPlayer
+    private var activePlayer: MediaPlayer? = null
+
     private var typingJob: Job? = null
+
+    // We don't need the enum anymore, we can check the player directly
+    // private enum class Character { SPAMTON, TENNA }
+    // private var selectedCharacter = Character.SPAMTON
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,21 +29,64 @@ class MainActivity : AppCompatActivity() {
         val inputText = findViewById<EditText>(R.id.inputText)
         val playButton = findViewById<Button>(R.id.playButton)
         val outputText = findViewById<TextView>(R.id.outputText)
+        val spamtonButton = findViewById<Button>(R.id.spamtonButton)
+        val tennaButton = findViewById<Button>(R.id.tennaButton)
+        val portraitImage = findViewById<ImageView>(R.id.portraitImage)
 
-        mediaPlayer = MediaPlayer.create(this, R.raw.spamton_voice)
+        spamtonPlayer = MediaPlayer.create(this, R.raw.spamton_voice).apply {
+            isLooping = true
+        }
+        tennaPlayer = MediaPlayer.create(this, R.raw.tenna_voice).apply {
+            isLooping = true
+        }
+        activePlayer = spamtonPlayer // Default to Spamton
 
+        // --- CORRECTED Character Selection Logic ---
+        spamtonButton.setOnClickListener {
+            // Stop the other player if it's running
+            if (tennaPlayer.isPlaying) {
+                tennaPlayer.pause()
+                tennaPlayer.seekTo(0)
+            }
+            portraitImage.setImageResource(R.drawable.spamton_portrait)
+            activePlayer = spamtonPlayer
+        }
+
+        tennaButton.setOnClickListener {
+            // Stop the other player if it's running
+            if (spamtonPlayer.isPlaying) {
+                spamtonPlayer.pause()
+                spamtonPlayer.seekTo(0)
+            }
+            portraitImage.setImageResource(R.drawable.tenna_portrait)
+            activePlayer = tennaPlayer
+        }
+
+        // --- CORRECTED Main "Speak" Button Logic ---
         playButton.setOnClickListener {
             val text = inputText.text.toString()
             outputText.text = ""
-            mediaPlayer.start()
 
-            // Cancel any previous typing animation
+            // --- FIX: Only pause/seek if the player is actually playing ---
+            if (activePlayer?.isPlaying == true) {
+                activePlayer?.pause()
+                activePlayer?.seekTo(0)
+            }
             typingJob?.cancel()
 
-            typingJob = GlobalScope.launch(Dispatchers.Main) {
-                for (char in text) {
-                    outputText.append(char.toString())
-                    delay(50) // speed of typing (adjust)
+            typingJob = lifecycleScope.launch {
+                try {
+                    activePlayer?.start()
+                    for (char in text) {
+                        outputText.append(char.toString())
+                        delay(50) // Typing speed
+                    }
+                } finally {
+                    // This is guaranteed to run after the loop is done or cancelled
+                    if (activePlayer?.isPlaying == true) {
+                        activePlayer?.pause()
+                        activePlayer?.seekTo(0)
+                    }
                 }
             }
         }
@@ -42,6 +94,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        mediaPlayer.release()
+        spamtonPlayer.release()
+        tennaPlayer.release()
+        typingJob?.cancel()
     }
 }
