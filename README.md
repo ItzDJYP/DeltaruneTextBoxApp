@@ -13,6 +13,8 @@ This is a simple Android application that simulates the iconic textbox dialogue 
 
 ## 📸 Screenshots
 
+![image](screenshots/Screenshot_20251024_074346_DeltaruneTextBoxApp.jpg)
+![image]()_
 
 ## ⚙️ How It Was Built
 
