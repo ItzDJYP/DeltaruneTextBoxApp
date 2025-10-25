@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">DeltaruneTextBoxApp</string>
+    <string name="spamton">Spamton</string>
+    <string name="tenna">Tenna</string>
+    <string name="hint_enter_text">Enter text here...</string>
+    <string name="speak">Speak</string>
+    <string name="no_videos">No videos</string>
+    <string name="prev">Prev</string>
+    <string name="next">Next</string>
+    <string name="play_me">Play Me</string>
+    <string name="close_video">Close video</string>
+    <string name="no_video_found">No video found. Place MP4s in assets/videos/ or add character_clip to res/raw.</string>
+    <string name="no_video_provided">No video provided</string>
+    <string name="video_playback_error">Video playback error</string>
+    <string name="unable_to_play">Unable to play video</string>
 </resources>

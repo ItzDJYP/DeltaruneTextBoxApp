@@ -9,4 +9,10 @@
         <item name="colorOnPrimary">@color/white</item>
         -->
     </style>
+
+    <!-- NoActionBar variant used for fullscreen activities -->
+    <style name="Theme.DeltaruneTextBoxApp.NoActionBar" parent="Theme.DeltaruneTextBoxApp">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
 </resources>

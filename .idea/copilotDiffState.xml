@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+              <option name="originalContent" value="&lt;resources&gt;&#10;    &lt;string name=&quot;app_name&quot;&gt;DeltaruneTextBoxApp&lt;/string&gt;&#10;    &lt;string name=&quot;spamton&quot;&gt;Spamton&lt;/string&gt;&#10;    &lt;string name=&quot;tenna&quot;&gt;Tenna&lt;/string&gt;&#10;    &lt;string name=&quot;hint_enter_text&quot;&gt;Enter text here...&lt;/string&gt;&#10;    &lt;string name=&quot;speak&quot;&gt;Speak&lt;/string&gt;&#10;    &lt;string name=&quot;no_videos&quot;&gt;No videos&lt;/string&gt;&#10;    &lt;string name=&quot;prev&quot;&gt;Prev&lt;/string&gt;&#10;    &lt;string name=&quot;next&quot;&gt;Next&lt;/string&gt;&#10;    &lt;string name=&quot;play_me&quot;&gt;Play Me&lt;/string&gt;&#10;    &lt;string name=&quot;close_video&quot;&gt;Close video&lt;/string&gt;&#10;    &lt;string name=&quot;no_video_found&quot;&gt;No video found. Place MP4s in assets/videos/ or add character_clip to res/raw.&lt;/string&gt;&#10;    &lt;string name=&quot;no_video_provided&quot;&gt;No video provided&lt;/string&gt;&#10;    &lt;string name=&quot;video_playback_error&quot;&gt;Video playback error&lt;/string&gt;&#10;    &lt;string name=&quot;unable_to_play&quot;&gt;Unable to play video&lt;/string&gt;&#10;&lt;/resources&gt;" />
+              <option name="updatedContent" value="&lt;resources&gt;&#10;    &lt;string name=&quot;app_name&quot;&gt;DeltaruneTextBoxApp&lt;/string&gt;&#10;    &lt;string name=&quot;spamton&quot;&gt;Spamton&lt;/string&gt;&#10;    &lt;string name=&quot;tenna&quot;&gt;Tenna&lt;/string&gt;&#10;    &lt;string name=&quot;hint_enter_text&quot;&gt;Enter text here...&lt;/string&gt;&#10;    &lt;string name=&quot;speak&quot;&gt;Speak&lt;/string&gt;&#10;    &lt;string name=&quot;no_videos&quot;&gt;No videos&lt;/string&gt;&#10;    &lt;string name=&quot;prev&quot;&gt;Prev&lt;/string&gt;&#10;    &lt;string name=&quot;next&quot;&gt;Next&lt;/string&gt;&#10;    &lt;string name=&quot;play_me&quot;&gt;Play Me&lt;/string&gt;&#10;    &lt;string name=&quot;close_video&quot;&gt;Close video&lt;/string&gt;&#10;    &lt;string name=&quot;no_video_found&quot;&gt;No video found. Place MP4s in assets/videos/ or add character_clip to res/raw.&lt;/string&gt;&#10;    &lt;string name=&quot;no_video_provided&quot;&gt;No video provided&lt;/string&gt;&#10;    &lt;string name=&quot;video_playback_error&quot;&gt;Video playback error&lt;/string&gt;&#10;    &lt;string name=&quot;unable_to_play&quot;&gt;Unable to play video&lt;/string&gt;&#10;&lt;/resources&gt;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
