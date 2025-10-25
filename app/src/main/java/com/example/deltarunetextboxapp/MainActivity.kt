@@ -1,5 +1,7 @@
 package com.example.deltarunetextboxapp
 
+import android.util.TypedValue
+import androidx.core.widget.TextViewCompat
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.widget.Button
@@ -29,6 +31,16 @@ class MainActivity : AppCompatActivity() {
         val inputText = findViewById<EditText>(R.id.inputText)
         val playButton = findViewById<Button>(R.id.playButton)
         val outputText = findViewById<TextView>(R.id.outputText)
+// after val outputText = findViewById<TextView>(R.id.outputText)
+        if (TextViewCompat.getAutoSizeTextType(outputText) == TextViewCompat.AUTO_SIZE_TEXT_TYPE_NONE) {
+            TextViewCompat.setAutoSizeTextTypeUniformWithConfiguration(
+                outputText,
+                10, // min size in sp
+                20, // max size in sp
+                1,  // step granularity in sp
+                TypedValue.COMPLEX_UNIT_SP
+            )
+        }
         val spamtonButton = findViewById<Button>(R.id.spamtonButton)
         val tennaButton = findViewById<Button>(R.id.tennaButton)
         val portraitImage = findViewById<ImageView>(R.id.portraitImage)
