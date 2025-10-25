@@ -35,7 +35,7 @@ Since this app is not on the Google Play Store, you can install it directly by "
 
 Click the link below to download the latest version of the app.
 
-[**Download**](<https://www.dropbox.com/scl/fo/8cyoq73981o5a18o3rdur/AOcY-TRyP6RIwjbFrI9XNU0?rlkey=vefs5szrfuf59fbsv493t3vc9&st=050hdx54&dl=0>)
+[**Download**](https://www.dropbox.com/scl/fo/8cyoq73981o5a18o3rdur/AOcY-TRyP6RIwjbFrI9XNU0?rlkey=vefs5szrfuf59fbsv493t3vc9&st=ndhigf2n&dl=0)
 
 ### Step 2: Enable "Install from Unknown Sources"
 
