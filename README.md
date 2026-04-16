@@ -53,4 +53,42 @@ By default, Android blocks installations from outside the Play Store for securit
 2.  The installation prompt should now appear. Tap **"Install"**.
 3.  Once it's finished, you can find the Deltarune Textbox app in your app drawer, complete with its custom logo!
 
+
+### Credits: 
+
+Credits Here:
+KeyGen Spamton, Spamton Dance, Tenna Boogie, Tenna Voice, Tenna Kick, Tenna Dances, Spamton Voice By Toby Fox 
+
+Spamton Laugh Gif by https://www.reddit.com/user/MeTTa_71/
+Spamton Mr Beast Gif by https://tenor.com/b111a.gif
+Spamton Sticker Gif By https://tenor.com/bJwmT.gif
+Tenna Gangnam Style Gif by https://tenor.com/sRz2Hjr6Aoj.gif
+
+Tenna All that Ass Video Extended By XLioneldoX (Original Video By DitzyFlama)
+Original: https://x.com/ditzyflama/status/1931425932146876603?s=20
+Extended: https://youtu.be/2axzWNi6DPU?si=16zCgAXnhVviBjmS
+
+Asgore Runs Over Dess with Lyrics by Bub8les
+Original: https://www.youtube.com/watch?v=u5NqO2v_xnY
+
+Asgore Dilemma by _toad14
+Original: https://youtube.com/shorts/c7o8U5CuE_Q?si=gipiRLYti5tORus0
+
+Fingers in his Truck / Asgore Runs Over Kanye West by JT Alex
+Original: https://youtu.be/EMdizpXGg8s?si=aFX_-0ZEE0ghTIaq
+
+【Undertale】Stronger Than You Response (ver. Frisk) - Animation
+Original: https://youtu.be/OQ3z6oxNheo?si=WMEdQ1qFfuGRxKlW
+
+♪ UNDERTALE THE MUSICAL - Animation Song Parody by Lhugueny
+Original: https://youtu.be/MobkO51msMI?si=S0na6WGtWJW6-8p7
+
+Stronger Than You Spanish in Africa Directors Cut by Bob Hogen Productions
+Original: https://youtu.be/hwPfzaxzSsM?si=cevOm8W0YoqDSmER
+
+Stronger Than You - Chara Response (Undertale Animation Parody) by Clara Kraft
+Original: https://youtu.be/FGMRULiUMJo?si=Js737Dx3CwJsacXD
+
+MMD - Sans Undertale x Nagito Komaeda (fingers in his ass)
+original: https://youtu.be/32Q3dJm2sdM?si=w6jN0LD1DsfgcQmh
 ---
